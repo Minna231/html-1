@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktive Deutsche Webseite</title>
+    
+    <style>
+        /* CSS diletakkan di sini, atau dipindahkan ke style.css */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #1e7e34;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>Willkommen bei Web-Entwicklung</h1>
+        <nav>
+            <a href="#">Start</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Kontakt</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <section>
+            <h2>Grundlagen der Programmierung</h2>
+            <p>Diese Seite zeigt ein einfaches Beispiel mit HTML, CSS und JavaScript.</p>
+            
+            <hr>
+            <h3>Interaktiver Bereich (JavaScript)</h3>
+            <p id="begruessung">Klicken Sie auf die Schaltfläche, um eine Nachricht zu sehen:</p>
+            
+            <button onclick="zeigeNachricht()">Nachricht anzeigen</button>
+            
+            <hr>
+        </section>
+        
+        <section>
+            <h2>Über CSS (Kaskadierende Stilblätter)</h2>
+            <p>CSS wird verwendet, um das Aussehen und das Layout der Webseite zu gestalten. Alle Farben und Schriftarten, die Sie sehen, werden durch CSS definiert.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Deutsche Webprojekte</p>
+    </footer>
+
+    <script>
+        // Skrip JavaScript untuk interaktivitas
+        function zeigeNachricht() {
+            // Mengubah teks dari elemen dengan ID 'begruessung'
+            let element = document.getElementById("begruessung");
+            element.innerHTML = "<strong>Vielen Dank für Ihren Klick!</strong> Die interaktive Funktion funktioniert.";
+            
+            // Memberikan peringatan popup (Alert)
+            alert("Die Nachricht wurde erfolgreich angezeigt!");
+        }
+    </script>
+
+</body>
+</html>
